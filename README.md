@@ -1,4 +1,4 @@
-# 🍹 Consumo de bebidas por cliente: comparação entre duas lojas
+# Consumo de bebidas por cliente: comparação entre duas lojas
 
 Análise exploratória de dados que compara o consumo de bebidas de duas lojas de um restaurante, usando uma métrica que corrige a diferença de público entre elas: **bebidas vendidas por cliente atendido**.
 
@@ -9,13 +9,13 @@ Análise exploratória de dados que compara o consumo de bebidas de duas lojas d
 
 ---
 
-## 🎯 Pergunta de negócio
+## Pergunta de negócio
 
 Quantas bebidas, por categoria, cada loja vende **por cliente** e como os perfis de consumo das duas lojas se diferenciam?
 
 Comparar o volume absoluto seria injusto, porque a Loja B atende cerca de 2x o público da Loja A. Por isso, a métrica central é *unidades vendidas ÷ clientes atendidos*.
 
-## 🔎 Principais resultados
+## Principais resultados
 
 | | Loja A | Loja B |
 |---|---|---|
@@ -36,7 +36,7 @@ Comparar o volume absoluto seria injusto, porque a Loja B atende cerca de 2x o p
 
 ![Top 5 produtos](images/05_top5_produtos.png)
 
-## 🧪 Processo
+## Processo
 
 1. **Validação:** nulos, duplicatas, quantidades negativas e consistência entre data e dia da semana.
 2. **Tratamento:** ordenação dos dias da semana e soma do público diário por loja.
@@ -44,14 +44,14 @@ Comparar o volume absoluto seria injusto, porque a Loja B atende cerca de 2x o p
 4. **Qualidade dos dados:** investigação de uma concentração incomum de quantidades na Loja A.
 5. **Dashboard interativo** em HTML, com Plotly.
 
-## ⚠️ Limitações
+## Limitações
 
 - O consumo vem como **total do período**, sem data, então não dá para medir tendência nem cruzar com dia da semana.
 - Na Loja B há duas linhas por dia (`tabela_preco` 0 e 1). Assumi que o público do dia é a soma das duas, mas isso precisa ser confirmado.
 - Na Loja A, 36% dos produtos venderam entre 300 e 350 unidades, uma concentração incomum que pode indicar teto de registro ou ajuste nos dados. As conclusões sobre a Loja A devem ser lidas com essa ressalva.
 - As categorias seguem a classificação do cadastro (por exemplo, café e mates entram em *Soft drinks*).
 
-## ▶️ Como reproduzir
+## Como reproduzir
 
 ```bash
 git clone https://github.com/GabrielMarteloti/analise-consumo-bebidas.git
@@ -62,7 +62,7 @@ jupyter notebook analise_drinks.ipynb
 
 O arquivo `dashboard_interativo.html` é gerado pelo notebook e carrega o Plotly pela internet; basta abri-lo no navegador.
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 ├── analise_drinks.ipynb         # notebook completo, com saídas
@@ -74,6 +74,6 @@ O arquivo `dashboard_interativo.html` é gerado pelo notebook e carrega o Plotly
 └── requirements.txt
 ```
 
-## 👤 Autor
+## Autor
 
 **Gabriel Marteloti** · [LinkedIn](https://www.linkedin.com/in/gabriel-marteloti-815750329/)
