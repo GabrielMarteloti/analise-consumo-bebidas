@@ -4,8 +4,7 @@ Análise exploratória de dados que compara o consumo de bebidas de duas lojas d
 
 **Ferramentas:** Python · pandas · matplotlib · seaborn · plotly · Jupyter
 
-> **Origem dos dados:** _(descreva aqui de onde vêm os dados e em que condições eles podem ser divulgados)_
-> As lojas foram renomeadas para *Loja A* e *Loja B*, e nomes de itens que identificavam o estabelecimento foram trocados por termos genéricos.
+> **Origem dos dados:** dados sintéticos criados por mim para fins de estudo, inspirados em um cenário de restaurante. Não representam vendas reais.
 
 ---
 
