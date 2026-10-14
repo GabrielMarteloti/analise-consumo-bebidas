@@ -1,0 +1,10 @@
+# Arquivos originais com dados não anonimizados: NUNCA enviar ao GitHub
+dados.xlsx
+dados_originais/
+*.xlsx
+
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+.DS_Store
