@@ -4,8 +4,7 @@ Análise exploratória de dados que compara o consumo de bebidas de duas lojas d
 
 **Ferramentas:** Python · pandas · matplotlib · seaborn · plotly · Jupyter
 
-> **Origem dos dados:** _(descreva aqui de onde vêm os dados e em que condições eles podem ser divulgados)_
-> As lojas foram renomeadas para *Loja A* e *Loja B*, e nomes de itens que identificavam o estabelecimento foram trocados por termos genéricos.
+> **Origem dos dados:** projeto prático desenvolvido a partir do vídeo [Projeto Prático de Análise de Dados com Python e Pandas](https://www.youtube.com/watch?v=RFJopzRpCJY), do canal Eficiência Programada. Os dados vêm do material do vídeo, e o autor informa que alterou alguns valores antes da análise, portanto **não representam vendas reais** e os resultados servem apenas como exercício. Nesta versão, as lojas foram renomeadas para Loja A e Loja B.
 
 ---
 
@@ -16,6 +15,8 @@ Quantas bebidas, por categoria, cada loja vende **por cliente** e como os perfis
 Comparar o volume absoluto seria injusto, porque a Loja B atende cerca de 2x o público da Loja A. Por isso, a métrica central é *unidades vendidas ÷ clientes atendidos*.
 
 ## 🔎 Principais resultados
+
+> Como os valores foram alterados pelo autor do vídeo, os resultados abaixo ilustram a técnica de análise e não o desempenho real de nenhum negócio.
 
 | | Loja A | Loja B |
 |---|---|---|
@@ -44,11 +45,23 @@ Comparar o volume absoluto seria injusto, porque a Loja B atende cerca de 2x o p
 4. **Qualidade dos dados:** investigação de uma concentração incomum de quantidades na Loja A.
 5. **Dashboard interativo** em HTML, com Plotly.
 
+## ➕ Além da análise base
+
+A análise base calcula bebidas por cliente e os produtos mais vendidos por loja. Este repositório acrescenta:
+
+- Validação dos dados antes da análise
+- Público por dia da semana
+- Mix de categorias e detalhamento por subcategoria
+- Checagem da distribuição das quantidades
+- Dashboard interativo com Plotly
+- Documentação: conclusões, limitações e próximos passos
+
 ## ⚠️ Limitações
 
+- Os valores foram alterados pelo autor do vídeo, então os dados **não representam vendas reais**.
 - O consumo vem como **total do período**, sem data, então não dá para medir tendência nem cruzar com dia da semana.
 - Na Loja B há duas linhas por dia (`tabela_preco` 0 e 1). Assumi que o público do dia é a soma das duas, mas isso precisa ser confirmado.
-- Na Loja A, 36% dos produtos venderam entre 300 e 350 unidades, uma concentração incomum que pode indicar teto de registro ou ajuste nos dados. As conclusões sobre a Loja A devem ser lidas com essa ressalva.
+- Na Loja A, 36% dos produtos venderam entre 300 e 350 unidades, uma concentração incomum que provavelmente decorre das alterações de valores feitas pelo autor.
 - As categorias seguem a classificação do cadastro (por exemplo, café e mates entram em *Soft drinks*).
 
 ## ▶️ Como reproduzir
@@ -73,6 +86,10 @@ O arquivo `dashboard_interativo.html` é gerado pelo notebook e carrega o Plotly
 ├── images/                      # gráficos usados neste README
 └── requirements.txt
 ```
+
+## 🙏 Crédito
+
+Projeto prático baseado no vídeo [Projeto Prático de Análise de Dados com Python e Pandas](https://www.youtube.com/watch?v=RFJopzRpCJY), do canal **Eficiência Programada**.
 
 ## 👤 Autor
 
